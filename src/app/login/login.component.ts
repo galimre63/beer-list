@@ -20,8 +20,8 @@ export class LoginComponent implements OnInit {
   public login():void {
     localStorage.setItem('userName',this.userName);
       if(this.userName && this.userName.length>0){
-        console.log('login(',localStorage.getItem('userName'),')');
-        this.route.navigate(['login']);
+        console.log('navigate main');
+        this.route.navigate(['main']);
       }
   }
 }
