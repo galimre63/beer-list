@@ -15,10 +15,10 @@ export class AuthGuard implements CanActivate {
       console.log('can activate',username);
       if(username && username.length>0){
         this.route.navigate(['main']);
-        return false;
+        return true;
       }else{
         this.route.navigate(['login']);
-        return true;
+        return false;
       }
   }
 }
