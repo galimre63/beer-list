@@ -9,7 +9,7 @@ const PROXY_CONFIG = [
             "/to",
             "/proxy"
         ],
-        target: "http://localhost:4200",
+        target: "https://api.punkapi.com/v2",
         secure: false
     }
 ]
