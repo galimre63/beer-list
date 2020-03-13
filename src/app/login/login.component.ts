@@ -6,9 +6,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  public userName:string = 'user name';
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  public login():void {
+    localStorage.setItem('userName',this.userName);
+  }
 }
