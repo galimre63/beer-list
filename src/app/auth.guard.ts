@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 @Injectable()
 export class AuthGuard implements CanActivate {
 
-  constructor(private route:Router)
+  constructor(private router:Router)
   {}
 
   canActivate(
@@ -16,6 +16,7 @@ export class AuthGuard implements CanActivate {
       if(username && username.length>0){
         return true;
       }else{
+        this.router.navigate(['/login'], { queryParams: { returnUrl: state.url }});
         return false;
       }
   }
