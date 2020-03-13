@@ -14,10 +14,8 @@ export class AuthGuard implements CanActivate {
       let username:string = localStorage.getItem('userName');
       console.log('can activate',username);
       if(username && username.length>0){
-        this.route.navigate(['main']);
         return true;
       }else{
-        this.route.navigate(['login']);
         return false;
       }
   }
