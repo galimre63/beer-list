@@ -12,6 +12,7 @@ export class AuthGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
       let username:string = localStorage.getItem('username');
+      console.log('can activate',username);
       if(username && username.length>0){
         return true;
       }
