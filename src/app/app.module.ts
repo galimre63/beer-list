@@ -10,7 +10,9 @@ import { AppRoutingModule } from './app.routing.module';
   declarations: [ AppComponent ],
   imports: [ 
     AppRoutingModule, 
-    BrowserModule, FormsModule, HttpModule 
+    BrowserModule,
+    FormsModule,
+    HttpModule 
   ],
   bootstrap: [ AppComponent ]
 })
