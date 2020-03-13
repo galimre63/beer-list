@@ -12,10 +12,10 @@ export class AuthGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
       let username:string = localStorage.getItem('userName');
-      console.log('can activate',username);
       if(username && username.length>0){
         return true;
       }else{
+        console.log('can activate',username,state.url);
         this.router.navigate(['/login'], { queryParams: { returnUrl: state.url }});
         return false;
       }
