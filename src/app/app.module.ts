@@ -9,6 +9,7 @@ import { routing }        from './app.routing.module';
 import { MainComponent } from './main/main.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './auth.guard';
+import { BeerConnectionService } from './beer-connection.service';
 
 @NgModule({
     imports: [
@@ -22,7 +23,7 @@ import { AuthGuard } from './auth.guard';
         LoginComponent,
         MainComponent
     ],
-    providers: [ AuthGuard ],
+    providers: [ AuthGuard, BeerConnectionService ],
     bootstrap: [ AppComponent ]
 })
 
