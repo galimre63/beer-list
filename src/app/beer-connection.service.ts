@@ -8,6 +8,6 @@ export class BeerConnectionService {
   constructor(private http:HttpClient) { }
 
   public getPage():Observable<any>{
-    return this.http.post('/beerpage',{page:1, per_page:10});
+    return this.http.post('/beers',{page:1, per_page:10});
   }
 }

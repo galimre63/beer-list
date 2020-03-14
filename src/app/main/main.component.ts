@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { BeerConnection } from '.../beer-connection.service';
+import { BeerConnectionService } from '../beer-connection.service';
 
 @Component({
   selector: 'app-main',
@@ -10,10 +10,12 @@ export class MainComponent implements OnInit {
 
   public beerList: any[];
 
-  constructor(private router:Router, private beerConnection:BeerConnection) { }
+  constructor(private router:Router, private beerConnection:BeerConnectionService) { }
 
   ngOnInit() {
-
+    this.beerConnection.getPage().subscribe(result => {
+      console.log('result:',result);
+    });
   }
 
   public logout():void {

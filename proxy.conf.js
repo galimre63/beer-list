@@ -1,7 +1,7 @@
 const PROXY_CONFIG = [
     {
         context: [
-            "/beerpage"
+            "/beers"
         ],
         target: "https://api.punkapi.com/v2",
         secure: false
