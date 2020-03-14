@@ -1,6 +1,7 @@
-import { NgModule }      from '@angular/core';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule }    from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppComponent }  from './app.component';
@@ -13,6 +14,7 @@ import { AuthGuard } from './auth.guard';
 @NgModule({
     imports: [
       NgModule,
+      CommonModule,
       BrowserModule,
       ReactiveFormsModule,
       HttpClientModule,
