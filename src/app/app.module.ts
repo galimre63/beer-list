@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent }  from './app.component';
 import { routing }        from './app.routing.module';
@@ -16,7 +15,6 @@ import { AuthGuard } from './auth.guard';
       NgModule,
       CommonModule,
       BrowserModule,
-      ReactiveFormsModule,
       HttpClientModule,
       routing
     ],
@@ -26,7 +24,7 @@ import { AuthGuard } from './auth.guard';
         LoginComponent
     ],
     providers: [ AuthGuard ],
-    bootstrap: [AppComponent]
+    bootstrap: [ AppComponent ]
 })
 
 export class AppModule { }
