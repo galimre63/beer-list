@@ -1,5 +1,5 @@
 {
-  "/v2": {
+  "/api": {
     "target": "https://api.punkapi.com/v2",
     "secure": false
   }
