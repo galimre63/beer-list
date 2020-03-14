@@ -1,5 +1,24 @@
 <div class="container">
-  main component
+  <div class="row">
+    <table class="table">
+      <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">-</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let beer for beerList">
+      <th scope="row">{{beer.id}}</th>
+      <td>{{beer.name}}</td>
+      <td>{{beer.description}}</td>
+      <td>{{beer.img}}</td>
+    </tr>
+  </tbody>
+    </table>
+  </div>
   <div class="row">
     <button class="btn-primary col" (click)="logout()">Logout</button>
   </div>

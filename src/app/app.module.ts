@@ -12,10 +12,11 @@ import { AuthGuard } from './auth.guard';
 
 @NgModule({
     imports: [
-        BrowserModule,
-        ReactiveFormsModule,
-        HttpClientModule,
-        routing
+      NgModule,
+      BrowserModule,
+      ReactiveFormsModule,
+      HttpClientModule,
+      routing
     ],
     declarations: [
         AppComponent,
