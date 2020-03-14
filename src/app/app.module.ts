@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 import { AppComponent }  from './app.component';
 import { routing }        from './app.routing.module';
@@ -12,16 +12,15 @@ import { AuthGuard } from './auth.guard';
 
 @NgModule({
     imports: [
-      NgModule,
-      CommonModule,
       BrowserModule,
+      CommonModule,
       HttpClientModule,
       routing
     ],
     declarations: [
         AppComponent,
-        MainComponent,
-        LoginComponent
+        LoginComponent,
+        MainComponent
     ],
     providers: [ AuthGuard ],
     bootstrap: [ AppComponent ]
