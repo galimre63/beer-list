@@ -10,7 +10,7 @@ export class MainComponent implements OnInit {
 
   public beerList: any[];
 
-  constructor(private router:Router/*, private beerConnection:BeerConnection*/) { }
+  constructor(private router:Router, private beerConnection:BeerConnection) { }
 
   ngOnInit() {
 
