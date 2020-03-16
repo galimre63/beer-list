@@ -2,21 +2,21 @@
   <div class="row">
     <table class="table">
       <thead>
-    <tr>
-      <th scope="col">id</th>
-      <th scope="col">Name</th>
-      <th scope="col">Description</th>
-      <th scope="col">-</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr ngFor="let beer for beerList">
-      <th scope="row">{{beer}}</th>
-      <td>{{beer}}</td>
-      <td>{{beer}}</td>
-      <td>{{beer.}}</td>
-    </tr>
-  </tbody>
+        <tr>
+          <th scope="col">id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Description</th>
+          <th scope="col">-</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ngFor="#beer for beerList; #idx = index;">
+          <th scope="row">{{idx}}</th>
+          <td>{{beer}}</td>
+          <td>{{beer}}</td>
+          <td>{{beer}}</td>
+        </tr>
+      </tbody>
     </table>
   </div>
   <div class="row">

@@ -8,7 +8,7 @@ import { BeerConnectionService } from '../beer-connection.service';
 })
 export class MainComponent implements OnInit {
 
-  public beerList: any[];
+  public beerList: any[] = [];
 
   constructor(private router:Router, private beerConnection:BeerConnectionService) { }
 

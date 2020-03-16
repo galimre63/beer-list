@@ -1,6 +1,11 @@
 {
   "/api": {
-    "target": "http://api.punkapi.com/v2",
-    "secure": false
+    "target": "http://api.punkapi.com/v2/",
+    "secure": false,
+    "pathRewrite": {
+      "^/api": ""
+    },
+    "changeOrigin": true,
+    "logLevel": "info"
   }
 }
