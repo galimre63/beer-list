@@ -11,6 +11,6 @@ export class BeerConnectionService {
 
   public getPage():Observable<any>{
     console.log('getPage',++this.count);
-    return this.http.post('http://api.punkapi.com/v2/beers',{page:1, per_page:10});
+    return this.http.post('beers',{page:1, per_page:10});
   }
 }
