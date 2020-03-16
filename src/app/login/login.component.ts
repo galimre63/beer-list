@@ -9,10 +9,7 @@ export class LoginComponent implements OnInit {
 
   public userName:string = 'username';
 
-  constructor(private route:Router) {
-      let username:string = localStorage.getItem('userName');
-      console.log('login constructor:\'',username,'\'');
-  }
+  constructor(private route:Router) {}
 
   ngOnInit() {
   }
