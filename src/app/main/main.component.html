@@ -10,7 +10,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr ngFor="#beer for beerList; #idx = index;">
+        <tr *ngFor="let beer of beerList; let idx = index;">
           <th scope="row">{{idx}}</th>
           <td>{{beer}}</td>
           <td>{{beer}}</td>
