@@ -5,9 +5,12 @@ import { Observable } from 'rxjs';
 @Injectable()
 export class BeerConnectionService {
 
+  private count:number = 0;
+
   constructor(private http:HttpClient) { }
 
   public getPage():Observable<any>{
-    return this.http.post('/beers',{page:1, per_page:10});
+    console.log('getPage',++this.count);
+    return this.http.post('http://api.punkapi.com/v2/beers',{page:1, per_page:10});
   }
 }
